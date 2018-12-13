@@ -99,18 +99,14 @@
                 </div>
                 <div class="col">
                     <h3>Inquiries:</h3>
-                    <form id="contactus" class="contact-small" action="/contact/send_message" method="POST">
+                    <form id="contactus" class="contact-small" action="mailto:brentedwards@heritagehospiceconsult.com" enctype="text/plain">
                         <p>
                             <label for="contact-name">Name:</label>
-                            <input type="text" name="name" id="contact-name"/>
-                        </p>
-                        <p>
-                            <label for="contact-email">Email:</label>
-                            <input type="text" name="email" id="contact-email"/>
+                            <input type="text" name="subject" id="contact-name"/>
                         </p>
                         <p>
                             <label for="contact-message">Message:</label>
-                            <textarea name="message" id="contact-message"></textarea>
+                            <textarea name="body" id="contact-message"></textarea>
                         </p>
                         <p>
                             <input class="btn btn-small" type="submit" value="Send Message" />
