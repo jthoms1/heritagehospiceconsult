@@ -99,10 +99,14 @@
                 </div>
                 <div class="col">
                     <h3>Inquiries:</h3>
-                    <form id="contactus" class="contact-small" action="mailto:brentedwards@heritagehospiceconsult.com" enctype="text/plain">
+                    <form id="contactus" name="contact" data-netlify="true" class="contact-small" method="POST">
                         <p>
                             <label for="contact-name">Name:</label>
                             <input type="text" name="subject" id="contact-name"/>
+                        </p>
+                        <p>
+                            <label for="contact-email">Email:</label>
+                            <input type="text" name="email" id="contact-email"/>
                         </p>
                         <p>
                             <label for="contact-message">Message:</label>
